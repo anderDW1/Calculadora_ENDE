@@ -20,9 +20,9 @@ private static float num1, num2;
 	 * @author ander
 	 */
 	public Calculadora(){
-		System.out.print("Introduzca valor para numero1: ");
+		System.out.print("Introduzca valor para num1: ");
 		num1=Consola.leeFloat();
-		System.out.print("Introduzca valor para numero2: ");
+		System.out.print("Introduzca valor para num2: "); 
 		num2=Consola.leeFloat();
 	}
 	
