@@ -11,22 +11,22 @@ public class CalculadoraCLI {
 	
 	
 	private static Calculadora calculadora;
-	private static String [] respuestas;
+	private static String [] respuestas=new String[9];
 	
 	/**
 	 * Metodo que carga un array de string el cual contiene la respuesta de cada operacion
 	 * @author ander
 	 */
 	private static void cargarArray() {
-		respuestas [0] = "Resultado de la SUMA --> "+calculadora.sumar();
-		respuestas [1] = "Resultado de la RESTA --> "+calculadora.restar();
-		respuestas [2] = "Resultado de la MULTIPLICACION --> "+calculadora.restar();
-		respuestas [3] = "Resultado de la DIVISION --> "+calculadora.dividir();
-		respuestas [4] = "Resultado del EXPONENTE --> "+calculadora.exponente();
-		respuestas [5] = "Resultado de la RAIZ CUADRADA --> "+calculadora.raiz_cuadrada();
-		respuestas [6] = "Resultado del LOGARITMO --> "+calculadora.logaritmo();
-		respuestas [7] = "Resultado de la conversion BINARIA --> "+calculadora.binario();
-		respuestas [8] = "Resultado del VALOR ABSOLUTO --> "+calculadora.valor_absoluto();
+		respuestas [0] = "Resultado de la SUMA --> ";
+		respuestas [1] = "Resultado de la RESTA --> ";
+		respuestas [2] = "Resultado de la MULTIPLICACION --> ";
+		respuestas [3] = "Resultado de la DIVISION --> ";
+		respuestas [4] = "Resultado del EXPONENTE --> ";
+		respuestas [5] = "Resultado de la RAIZ CUADRADA --> ";
+		respuestas [6] = "Resultado del LOGARITMO --> ";
+		respuestas [7] = "Resultado de la conversion BINARIA --> ";
+		respuestas [8] = "Resultado del VALOR ABSOLUTO --> ";
 	}
 	
 	
@@ -57,9 +57,8 @@ public class CalculadoraCLI {
 				respuesta = Consola.leeInt();
 			}
 			
-			CalculadoraCLI cal = new CalculadoraCLI();
 			switch (respuesta) {
-			case 1 :  devuelveRespuestas(1);
+			case 1 : devuelveRespuestas(1);
 				break;
 			case 2 : devuelveRespuestas(2);
 				break;
@@ -86,6 +85,17 @@ public class CalculadoraCLI {
 		}while(respuestaRepetirBucle.equalsIgnoreCase("NO"));	 
 	}
 
+	
+	
+	
+	
+	
+	private static void pedirNums(int num)
+	{
+		
+		
+		
+	}
 	/**
 	 * Metodo que devolvera el resultado de la operacion solicitada
 	 * @param num Numero para indicar la operacion que deseamos realizar, dependiendo del numero realizaremos una operacion u otra ya que dentro de cada posiciond el array estan los metodos para realizar dichas operaciones
@@ -93,24 +103,72 @@ public class CalculadoraCLI {
 	 */
 	private static void devuelveRespuestas(int num) {
 		cargarArray();
+		float num1,num2;
+		Calculadora cal;
 		switch (num) {
-		case 1 : System.out.println(respuestas[0]);
+		case 1 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			System.out.print("Introduzca valor para numero2: ");
+			num2=Consola.leeFloat();
+			cal=new Calculadora(num1,num2);
+				System.out.println(respuestas[0]+cal.sumar());
 			break;
-		case 2 : System.out.println(respuestas[1]);
+		case 2 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			System.out.print("Introduzca valor para numero2: ");
+			num2=Consola.leeFloat();
+			cal=new Calculadora(num1,num2);
+				System.out.println(respuestas[1]+cal.restar());
 			break;
-		case 3 : System.out.println(respuestas[2]);
+		case 3 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			System.out.print("Introduzca valor para numero2: ");
+			num2=Consola.leeFloat();
+			cal=new Calculadora(num1,num2);
+			System.out.println(respuestas[2]+cal.multiplicar());
 			break;
-		case 4 : System.out.println(respuestas[3]);
+		case 4 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			System.out.print("Introduzca valor para numero2: ");
+			num2=Consola.leeFloat();
+			cal=new Calculadora(num1,num2);
+			System.out.println(respuestas[3]+cal.dividir());
 			break;
-		case 5 : System.out.println(respuestas[4]);
+		case 5 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			System.out.print("Introduzca valor para numero2: ");
+			num2=Consola.leeFloat();
+			cal=new Calculadora(num1,num2);
+			System.out.println(respuestas[4]+cal.exponente());
 			break;
-		case 6 : System.out.println(respuestas[5]);
+		case 6 :
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			cal=new Calculadora(num1);
+			System.out.println(respuestas[5]+cal.raiz_cuadrada());
 			break;
-		case 7 : System.out.println(respuestas[6]);
+		case 7 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			cal=new Calculadora(num1);
+			System.out.println(respuestas[6]+cal.logaritmo());
 			break;
-		case 8 : System.out.println(respuestas[7]);
+		case 8 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			cal=new Calculadora(num1);
+			System.out.println(respuestas[7]+cal.binario());
 			break;
-		case 9 : System.out.println(respuestas[8]);
+		case 9 : 
+			System.out.print("Introduzca valor para numero1: ");
+			num1=Consola.leeFloat();
+			cal=new Calculadora(num1);
+			System.out.println(respuestas[8]+cal.valor_absoluto());
 			break;
 		}
 		
@@ -118,6 +176,7 @@ public class CalculadoraCLI {
 	}
 	
 	public static void main(String[] args) {
+	
 		LanzarMenu();
 	}
 	

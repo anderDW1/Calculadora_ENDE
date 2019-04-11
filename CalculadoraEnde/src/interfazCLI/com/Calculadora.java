@@ -12,20 +12,19 @@ package interfazCLI.com;
 
 public class Calculadora {
 
-private static float num1, num2;
+	static float num1, num2;
 	
-	/**
-	 * CONSTRUCTOR para la calculadora
-	 * @param  num1  El parámetro num1 define el valor del elemento
-	 * @author ander
-	 */
-	public Calculadora(){
-		System.out.print("Introduzca valor para num1: ");
-		num1=Consola.leeFloat();
-		System.out.print("Introduzca valor para num2: "); 
-		num2=Consola.leeFloat();
+	public Calculadora(float num1, float num2)
+	{
+		this.num1=num1;
+		this.num2=num2;
+
 	}
-	
+	public Calculadora(float num1)
+	{
+		this.num1=num1;
+
+	}
 	
 	/**
 	 * Método que devuelve la SUMA realizada entre num1 y num2
@@ -33,11 +32,11 @@ private static float num1, num2;
 	 * @author ander
 	 */
 	public static float sumar(){
+	
 		float resul=num1+num2;
 		
 		return resul;
 	}
-	
 	
 	/**
 	 * Método que devuelve la RESTA realizada entre num1 y num2
@@ -45,11 +44,12 @@ private static float num1, num2;
 	 * @author ander
 	 */
 	public static float restar(){
+
 		float resul=num1-num2;
 		
 		return resul;	
 	}
-	
+
 	
 	/**
 	 * Método que devuelve la MULTIPLICACION realizada entre num1 y num2
@@ -57,6 +57,7 @@ private static float num1, num2;
 	 * @author ander
 	 */
 	public static float multiplicar(){
+
 		float resul=num1*num2;
 		
 		return resul;	
@@ -68,8 +69,9 @@ private static float num1, num2;
 	 * @return Devuelve la division
 	 * @author ander
 	 */
+	
 	public static float dividir(){
-		
+
 		try {
 			float resul=num1/num2;
 		
@@ -90,10 +92,10 @@ private static float num1, num2;
 	 */
 	public static float exponente(){
 		
-		float resul=0;
+		float resul=1;
 		
 		for (int i=0;i<num2;i++){
-			resul=num1+resul;	
+			resul=num1*resul;	
 		}
 
 		return resul;
@@ -107,6 +109,7 @@ private static float num1, num2;
 	 */
 	public static float raiz_cuadrada() {
 		float resul=0;
+
 		
 		return resul = (float) Math.sqrt(num1);
 	}
@@ -119,6 +122,7 @@ private static float num1, num2;
 	 */
 	public static float logaritmo() {
 		float resul=0;
+
 		
 		return resul = (float) Math.log(num1);
 	}
@@ -129,20 +133,20 @@ private static float num1, num2;
 	 * @return Devuelve la suma 
 	 * @author ander
 	 */
-	public static float binario() {
-		float resul=0;
-		float resto=0;
-		if(num1 > 0) {
-			while (num1 > 0) {
-                if (num1 % 2 == 0) {
-                	resto=num1 % 2;
+	public static String binario() {
+		int num=(int)num1,resto=0;
+		String resul="";
+		
+		if(num > 0) {
+			while (num > 0) {
+                	resto=(int) (num % 2);
                 	resul=resul+resto;
-                }  
+                	num=num/2;
 			}
 			return resul; 
 		}
 		else{
-			return -1;	
+			return "-1";	
 		}	
 	}
 	
@@ -153,13 +157,13 @@ private static float num1, num2;
 	 * @author ander
 	 */
 	public static float valor_absoluto() {
-		
 		float resul=0;
+	
 		
 		float num1_abs = Math.abs(num1);
 		
 		return num1_abs;
 	}
-	
+
 	
 }
