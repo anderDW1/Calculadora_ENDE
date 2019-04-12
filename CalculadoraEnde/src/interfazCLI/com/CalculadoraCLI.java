@@ -87,15 +87,6 @@ public class CalculadoraCLI {
 
 	
 	
-	
-	
-	
-	private static void pedirNums(int num)
-	{
-		
-		
-		
-	}
 	/**
 	 * Metodo que devolvera el resultado de la operacion solicitada
 	 * @param num Numero para indicar la operacion que deseamos realizar, dependiendo del numero realizaremos una operacion u otra ya que dentro de cada posiciond el array estan los metodos para realizar dichas operaciones

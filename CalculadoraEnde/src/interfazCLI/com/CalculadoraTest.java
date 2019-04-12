@@ -18,7 +18,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit suma1 
 	 *suma 2 valores y comprueba si esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */
 	
 	
@@ -32,7 +32,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit suma2 
 	 *suma 2 valores y comprueba si la suma esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */
 	
 	@Test
@@ -45,7 +45,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit resta 
 	 *resta 2 valores y comprueba si la resta esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */
 	
 	
@@ -59,7 +59,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit resta 2
 	 *resta 2 valores y comprueba si la resta esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */
 	
 	@Test
@@ -73,7 +73,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Multiplicar 
 	 *multiplica 2 valores y comprueba si la multiplicacion esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */
 	
 	
@@ -87,7 +87,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Multiplicar2
 	 *multiplica 2 valores y comprueba si la multiplicacion esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	@Test
@@ -100,7 +100,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Dividir
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	
@@ -115,7 +115,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Dividir2
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	
@@ -129,7 +129,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Exponente
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	@Test
@@ -142,7 +142,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Exponente2
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	@Test
@@ -155,7 +155,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Raiz Cuadrada
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	@Test
 	void testRaiz_cuadrada() {
@@ -168,7 +168,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Raiz Cuadrada2
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	@Test
 	void testRaiz_cuadrada2() {
@@ -180,7 +180,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Binario
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	@Test
@@ -193,7 +193,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Binario2
 	 *divide 2 valores y comprueba si la division esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	
 	@Test
@@ -207,7 +207,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Valor Absoluto
 	 *Calcula el valor absoluto de un numero y comprueba si esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	@Test
 	void testValor_absoluto() {
@@ -220,7 +220,7 @@ class CalculadoraTest {
 	/**
 	 *Prueba JUnit Valor Absoluto2
 	 *Calcula el valor absoluto de un numero y comprueba si esta bien
-	 * author Xabier
+	 * @author Xabier
 	 */	
 	@Test
 	void testValor_absoluto2() {
